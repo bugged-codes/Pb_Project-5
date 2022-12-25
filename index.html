@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+		<!-- Font Awesome Kit -->
+		<script src="https://kit.fontawesome.com/01bde10797.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="./CSS/styles.css" />
+
+		<title>5th-Project</title>
+	</head>
+	<body>
+		<div class="container" id="container">
+			<div class="headings">
+				<h1 class="heading1">Tasks</h1>
+				<p class="heading2">Lists</p>
+			</div>
+			<div class="addList">
+				<p class="addText">
+					<span class="material-icons addIcon addNewLists addListBtn" id="addListBtn">add_circle</span>
+					<span class="addListText">Add List</span>
+				</p>
+			</div>
+		</div>
+		<div id="textchanged">No Items In Todo List</div>
+
+		<div class="page2Contains" id="page2Contains">
+			<p class="page2BackBtn" id="page2BackBtn">
+				<span class="material-icons"> arrow_back_ios </span>
+			</p>
+			<p class="addText">
+				<span class="material-icons addIcon addNewLists addListBtn page2AddBtn" id="page2AddBtn"> add_circle </span>
+			</p>
+		</div>
+
+		<div id="parent"></div>
+
+		<div class="addNewList" id="addNewList">
+			<h2 style="font-weight: lighter; margin-bottom: 6px">Add New List</h2>
+			<br />
+			<input type="text" class="inputText" id="listText" placeholder="Enter New Task.." />
+			<br />
+			<div class="btn-taskBody">
+				<button id="listBtn" class="btn listBtn material-icons">add_circle</button>
+				<button id="cancelBtn" class="btn listBtn material-icons">cancel</button>
+			</div>
+		</div>
+		<div class="addNewList" id="addNewItem">
+			<h2 style="font-weight: lighter; margin-bottom: 6px">Add New Item</h2>
+			<br />
+			<input type="text" class="inputText" id="itemText" placeholder="Enter a task.." />
+			<br />
+			<div class="btn-itemBody">
+				<button id="itemAddBtn" class="btn listBtn material-icons">add_circle</button>
+				<button id="itemCancelBtn" class="btn listBtn material-icons">cancel</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="./Scripts/script.js"></script>
+	</body>
+</html>
